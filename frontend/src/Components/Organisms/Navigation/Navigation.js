@@ -29,9 +29,11 @@ function Navigation({active, setActive}) {
 }
 
 const NavStyled = styled.nav`
+@media only screen and (max-width: 1200px) {
+  width: 100%;
+}
     padding: 2rem 1.5rem;
     width: 374px;
-    height: 100%;
     background: #9a9edb;
     border: 3px solid #FFFFFF;
     backdrop-filter: blur(4.5px);

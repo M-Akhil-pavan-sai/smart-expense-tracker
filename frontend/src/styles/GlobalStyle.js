@@ -9,7 +9,7 @@ list-style-type: style none;;
 }
 body{
     background-color: #422D92;
-    overflow: hidden;
+    overflow: auto;
     color:black;
 }
 `

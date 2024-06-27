@@ -9,7 +9,7 @@ import Expenses from "./Components/Organisms/Expenses/Expenses"
 
 
 const AppStyled= styled.div`
-height: 100vh;
+height: 100%;
 background-image: url('');
 main{
     flex: 1;

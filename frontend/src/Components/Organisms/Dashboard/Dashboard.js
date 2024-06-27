@@ -17,7 +17,7 @@ function Dashboard() {
     return (
         <DashboardStyled>
             <InnerLayout>
-                <h1>All Transactions</h1>
+                <h1 style={{marginBottom:'1rem'}}>All Transactions</h1>
                 <div className="stats-con">
                     <div className="chart-con">
                         <Chart />
@@ -70,7 +70,15 @@ function Dashboard() {
 }
 
 const DashboardStyled = styled.div`
+@media only screen and (max-width: 1200px) {
+  width: 100%;
+  height: 100%;
+}
     .stats-con{
+        @media only screen and (max-width: 1200px) {
+ display: flex;
+ flex-direction: column;
+}
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         gap: 2rem;
@@ -78,6 +86,10 @@ const DashboardStyled = styled.div`
             grid-column: 1 / 4;
             height: 400px;
             .amount-con{
+                @media only screen and (max-width: 1200px) {
+ display: flex;
+ flex-direction: column;
+}
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 2rem;
@@ -113,6 +125,10 @@ const DashboardStyled = styled.div`
         }
 
         .history-con{
+            @media only screen and (max-width: 1200px) {
+ display: none;
+ flex-direction: column;
+}
             grid-column: 4 / -1;
             h2{
                 margin: 1rem 0;

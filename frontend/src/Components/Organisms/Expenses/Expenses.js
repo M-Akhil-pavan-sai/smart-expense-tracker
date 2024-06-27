@@ -66,6 +66,9 @@ const ExpenseStyled = styled.div`
         }
     }
     .income-content{
+        @media only screen and (max-width: 1200px) {
+  flex-direction:column;
+}
         display: flex;
         gap: 2rem;
         .incomes{
